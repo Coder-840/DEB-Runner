@@ -1,0 +1,7 @@
+{
+  "name": "deb-runner",
+  "dependencies": {
+    "express": "^4.18.2",
+    "multer": "^1.4.5"
+  }
+}
