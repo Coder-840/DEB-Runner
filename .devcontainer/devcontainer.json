@@ -1,0 +1,13 @@
+{
+  "name": "Sleek .deb Runner",
+  "image": "://mcr.microsoft.com",
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+  },
+  "forwardPorts": [3000, 6080],
+  "portsAttributes": {
+    "3000": { "label": "App Dashboard", "onAutoForward": "openBrowser" },
+    "6080": { "label": "Hidden Desktop", "onAutoForward": "ignore" }
+  },
+  "postCreateCommand": "bash setup.sh"
+}
