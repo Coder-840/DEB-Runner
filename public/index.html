@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Deb Runner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Deb Runner</h1>
+
+<input type="file" id="debFile">
+
+<button onclick="upload()">Upload & Install</button>
+
+<input placeholder="Run command (example: firefox)" id="cmd">
+
+<button onclick="run()">Run</button>
+
+<iframe src="http://localhost:6080/vnc.html" id="display"></iframe>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
